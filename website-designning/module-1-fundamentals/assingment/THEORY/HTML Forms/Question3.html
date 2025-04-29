@@ -1,0 +1,24 @@
+<!-- 
+ 
+What is the purpose of the label element in a form, and how does it improve
+accessibility?
+
+
+    Descriptive Text: 
+        It provides a clear, descriptive text for form inputs like text fields, checkboxes, radio buttons, etc. 
+        This helps users understand what information they are supposed to enter or select.
+
+
+    Accessibility Improvement:
+        When a <label> is properly associated with an input (either by wrapping the input or using the for attribute matching the input's id), screen readers can correctly announce the label together with the form field. 
+        This is crucial for users who rely on assistive technologies.
+
+
+        It also makes the clickable area larger for inputs like checkboxes and radio buttons — clicking the label will focus/select the corresponding input, which improves usability for everyone, including users with motor difficulties.
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email"
+
+
+    Here, the label is linked to the input with id="email", so screen readers will read "Email Address" when focusing on the input, and users can click the text "Email Address" to focus the input as well.
+        -->
