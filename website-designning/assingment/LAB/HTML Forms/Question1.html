@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>contact Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div{
+            background-color: rgb(6, 8, 6);
+        
+        }
+        label{
+            
+        
+            font-display: block;
+            margin-top: 5%;
+            
+        }
+        form{
+            background-color: #efebf4;
+            color:rgb(3, 7, 7); 
+            height: 120%; 
+            width: 50%; 
+            margin-top: 80px; 
+            text-align: center; 
+            margin: auto;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+   
+        <div>
+        <form action="/assesment" method="POST">
+            <h1>Contact Form</h1>
+            <label for="name">Fullname :</label><br>
+            <input type="text" placeholder="Name" id="Name" maxlength="50" pattern="[A-Za-z\s]+" title="Only letters and spaces allowed.">
+            <br><br><br>
+            <label for="Email">Email :</label><br>
+            <input type="email" placeholder="Email" id="Email" required><br><br><br>
+            <label for="Phone Number">Phone number :</label><br>
+            <input type="number" placeholder="Phone Number" id="Phone Number" pattern="[0-9]{10}"  maxlength="10" required><br><br>
+            <label for subject>Subject :</label><br>
+            <select name="Select Subject" id="Select Subject" required>
+            <option value="">-- Please choose an option-- </option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Marathi">Marathi</option>
+            </select><br><br><br>
+          
+        <label for="Message">Message:</label><br>
+        <textarea id="Message" name="Message" placeholder="Message" maxlength="500" required></textarea><br><br><br>
+        <button type="submit">Submit</button>
+    </div>
+
+    
+       
+
+        </form>
+</body>
+</html>
