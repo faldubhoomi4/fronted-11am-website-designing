@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Multimedia html5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Audio Tag</h2>
+    <audio controls autoplay loop muted>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>Video Tag</h2>
+    <video width="200" height="200" controls autoplay loop muted>
+    <source src="D:\Python TOPS\python-backend\Modules\Softskills - Softskills Building Corporate Culture\Task 2 Presentation  Self Elevator pitch Video.mp4" type="video/mp4">
+    </video>
+
+    <h2>Canvas Shape</h2>
+    <canvas id="canvasShape" width="400" height="200"></canvas>
+    <script>
+    const canvas = document.getElementById("canvasShape");
+    const ctx = canvas.getContext("2d");
+
+    // Draw rectangle
+    ctx.fillStyle = "blue";
+    ctx.fillRect(30, 30, 100, 50);
+
+    // Draw circle
+    ctx.beginPath();
+    ctx.arc(300, 70, 30, 0, 2 * Math.PI);
+    ctx.fillStyle = "red";
+    ctx.fill();
+  </script>
+
+  <!-- SVG Shape -->
+  <h2>SVG Shape</h2>
+  <svg width="400" height="200">
+    <!-- Rectangle -->
+    <rect x="30" y="30" width="100" height="50" fill="blue" />
+    <!-- Circle -->
+    <circle cx="300" cy="70" r="30" fill="red" />
+  </svg>
+
+</body>
+</html>
+  
