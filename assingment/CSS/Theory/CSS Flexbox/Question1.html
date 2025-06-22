@@ -1,0 +1,91 @@
+<!-- 
+Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms
+flex-container and flex-item.
+Answer: 
+
+CSS Flexbox (Flexible Box Layout) is a layout model in CSS that allows you to design complex and responsive layouts more easily and efficiently. 
+It is especially useful when you need to align items in a row or column and distribute space within a container—even when the size of the items is unknown or dynamic.
+
+
+=>  Why Flexbox is Useful for Layout Design
+
+
+One-dimensional layout: Flexbox handles layout in either row or column direction, not both simultaneously (unlike CSS Grid).
+
+Responsive design: It easily adapts to various screen sizes.
+
+Efficient alignment: Align items both horizontally and vertically with minimal code.
+
+Space distribution: Distributes available space among items and handles gaps effectively.
+
+Ordering items: Allows reordering of items visually without changing the HTML structure.
+
+
+=>  Flex Container
+
+Example: 
+
+.flex-container {
+  display: flex;
+}
+
+Properties for Flex Container:
+
+flex-direction: Defines direction of items (row, column, etc.)
+
+justify-content: Aligns items horizontally
+
+align-items: Aligns items vertically
+
+flex-wrap: Allows items to wrap onto multiple lines
+
+=>   Flex Item
+
+
+The child elements inside the flex container that are laid out using Flexbox rules.
+
+Example: 
+
+<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+</div>
+
+
+Properties for Flex Items:
+
+flex-grow: Defines how much an item will grow relative to others
+
+flex-shrink: Defines how items shrink when necessary
+
+flex-basis: Sets the initial size of an item
+
+align-self: Overrides align-items for a specific item
+
+order: Changes the order of items visually
+
+Example:  
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #f0f0f0;
+  }
+
+  .flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+  }
+</style>
+
+<div class="flex-container">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+</div>
+--> 

@@ -1,0 +1,55 @@
+
+<!-- 
+Question 2.  Explain the concept of CSS specificity. How do conflicts between multiple styles
+get resolved?
+
+Answer: 
+
+=>
+CSS specificity is a set of rules that determines which CSS rule is applied to an element when there are conflicting styles from different selectors.
+
+When multiple styles target the same element, the browser uses specificity to decide which style wins.
+
+=>
+
+How Specificity Works:
+Each selector is assigned a specificity value based on the types of selectors used:
+
+Selector Type	Specificity Value
+Inline styles	1000
+ID selectors (#id)	100
+Class selectors (.class), attribute selectors ([type]), and pseudo-classes (:hover)	10
+Element selectors (div, p, h1, etc.) and pseudo-elements (::before)	1
+Universal selector (*), combinators (+, >, ~), and inherited styles	0
+
+
+p {
+  color: blue;
+}
+
+
+.text {
+  color: green;
+}
+
+#main {
+  color: red;
+}
+
+
+<p id="main" class="text" style="color: orange;">Hello</p>
+
+
+How Conflicts Are Resolved:
+Higher specificity wins.
+
+If specificity is the same, the last declared rule in the CSS wins (source order).
+
+!important overrides all, but should be used sparingly.
+
+
+
+
+
+
+-->

@@ -1,0 +1,94 @@
+
+<!--
+
+Question 3: What is the difference between internal, external, and inline CSS? Discuss the
+advantages and disadvantages of each approach.
+
+Answer: 
+
+=>  CSS can be applied to HTML in three main ways: internal, external, and inline. 
+Each has its own use case, advantages, and disadvantages.
+
+1. Inline CSS
+
+Definition: CSS styles are written directly within an HTML element using the style attribute.
+
+Example:
+
+=> <p style="color: red; font-size: 18px;">This is inline CSS.</p>
+
+
+Advantages:
+
+=> Quick and easy for small changes.
+
+=> verrides other styles due to high specificity.
+
+Disadvantages:
+
+=> Not reusable.
+
+=> Makes HTML cluttered and harder to maintain.
+
+=> Poor separation of content and style.
+
+2. Internal CSS
+
+=> Definition: CSS styles are written inside a <style> tag within the <head> section of an HTML document.
+
+Example:
+<head>
+  <style>
+    p {
+      color: green;
+    }
+  </style>
+</head>
+
+
+Advantages:
+
+=>  Useful for styling a single page.
+
+=>  Keeps styles centralized for one document.
+
+Disadvantages:
+
+=>  Not reusable across multiple pages.
+
+=>  Increases page load time if used excessively.
+
+
+3. External CSS
+Definition: CSS is written in a separate .css file and linked to the HTML document using the <link> tag.
+
+Example:
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+styles.css
+
+p {
+  color: blue;
+}
+
+
+Advantages:
+
+=> Reusable across multiple pages.
+
+=>  Cleaner HTML structure.
+
+=>  Faster loading after first page (cached by browser).
+
+Disadvantages:
+
+=>  Requires an extra HTTP request.
+
+=>  Doesn’t work if the CSS file fails to load.
+
+
+
+-->

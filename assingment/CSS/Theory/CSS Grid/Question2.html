@@ -1,0 +1,93 @@
+<!-- 
+Question 2: Describe the grid-template-columns, grid-template-rows, and grid-gap
+properties. Provide examples of how to use them.
+
+Answer:
+
+grid-template-columns: 
+
+=> grid-template-columns: <track-size> <track-size> ...;
+
+Example:
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px auto;
+}
+
+First column: 100px
+Second column: 200px
+
+Third column: fills remaining space (auto)
+
+grid-template-rows
+Defines the number and height of rows in a grid container.
+
+Syntax:
+
+grid-template-rows: <track-size> <track-size> ...;
+
+Example:
+
+
+.container {
+  display: grid;
+  grid-template-rows: 100px 150px;
+}
+
+This creates two rows:
+First row: 100px
+Second row: 150px
+
+grid-gap (now gap)
+
+Defines the space between grid rows and columns.
+
+grid-gap: <row-gap> <column-gap>;
+
+Example:
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 10px 20px;
+}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 5px;
+    background-color: #e1e1f4;
+  }
+
+  .box {
+    background: rgb(218, 178, 196);
+    color: rgb(14, 19, 15);
+    padding: 100px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+   <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+</div>
+</body>
+</html>

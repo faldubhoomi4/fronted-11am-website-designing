@@ -1,0 +1,75 @@
+
+<!-- 
+Question 1: What are media queries in CSS, and why are they important for responsive design?
+Answer: 
+Media queries in CSS are a feature that allow you to apply styles conditionally based on the characteristics of the device or viewport, such as screen width, height, resolution, or device type. 
+They are a cornerstone of responsive web design, ensuring websites look and function well across a variety of devices — from mobile phones to large desktop monitors.
+
+ Syntax of Media Queries:
+
+ @media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+ Common Media Features:
+ width:  Width of the viewport
+ height: Height of the viewport
+ max-width: Maximum width for applying styles
+ min-width: Minimum width for applying styles
+ orientation: Landscape or portrait mode
+ resolution: Screen resolution
+ hover: Whether the device supports hover
+
+
+
+ Why Media Queries Are Important for Responsive Design:
+
+=> Device Adaptability
+Allow your website layout to adapt to different screen sizes (mobile, tablet, desktop).
+=>Improved User Experience
+Ensures readability, usability, and navigation are optimized for all devices. 
+=>Performance Optimization
+Load only necessary styles for specific devices, improving performance.
+=>Accessibility
+Enhances accessibility by making content easier to read and interact with on smaller screens.
+=>Future-Proofing
+Allows your design to remain functional as new devices with varying screen sizes emerge.
+-->
+
+
+Example: 
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* For smaller devices (phones) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
