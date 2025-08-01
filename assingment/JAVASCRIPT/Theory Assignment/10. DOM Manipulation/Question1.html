@@ -1,0 +1,91 @@
+<!-- Question 1: What is the DOM (Document Object Model) in JavaScript? How does JavaScript
+interact with the DOM? 
+Answer: 
+
+    The DOM (Document Object Model) is a programming interface for web documents. 
+    It represents the HTML or XML page as a tree structure where each node is an object representing
+    a part of the document.
+
+    The DOM allows developers to access, modify, add, or remove elements and content in the web page dynamically.
+
+    Think of the DOM as a live map of your webpage: whenever you change it with JavaScript, 
+    the web page updates immediately without needing to reload.
+
+ Example of DOM Structure:
+        <html>
+    <body>
+        <h1>Hello World</h1>
+        <p>This is a paragraph.</p>
+    </body>
+    </html>
+
+
+ How JavaScript Interacts with the DOM
+    JavaScript uses the DOM API (methods and properties) to:
+
+    Select elements
+
+    Manipulate content
+
+    Change styles
+
+    Handle events (like clicks, form submissions)
+
+    Create or delete elements dynamically.
+
+
+    Common DOM Methods in JavaScript:
+
+    Purpose	Methods/Examples
+    Select Elements	                getElementById(), querySelector(), getElementsByClassName()
+    Change Content	                element.textContent, element.innerHTML
+    Change Style	                element.style.color = "red"
+    Create Elements	                document.createElement(), appendChild()
+    Handle Events	                element.addEventListener('click', function)
+
+
+    Example:
+
+
+        <p id="demo">Old Text</p>
+        <button onclick="changeText()">Click Me</button>
+
+        <script>
+        function changeText() {
+            document.getElementById("demo").textContent = "New Text!";
+        }
+        </script>
+
+
+ Summary:
+    The DOM connects your HTML with JavaScript.
+
+    It lets you make webpages interactive (change content, styles, respond to clicks).
+
+    JavaScript reads and writes to the DOM in real-time, making modern web applications dynamic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> 

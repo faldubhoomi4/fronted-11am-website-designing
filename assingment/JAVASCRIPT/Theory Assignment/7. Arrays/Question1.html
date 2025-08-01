@@ -1,0 +1,41 @@
+<!-- Question 1: What is an array in JavaScript? How do you declare and initialize an array?
+Answer: 
+What is an Array in JavaScript?
+    In JavaScript, an array is a special type of object used to store multiple values in a single variable. 
+    Arrays can hold elements of any data type (numbers, strings, objects, even other arrays), and they are ordered collections 
+    — each element has an index starting from 0.
+
+How to Declare and Initialize an Array
+
+    1. Using Square Brackets [] (Most Common Way):
+        // Declaration and Initialization
+        let fruits = ["Apple", "Banana", "Mango"];
+        console.log(fruits); 
+        // Output: ["Apple", "Banana", "Mango"]
+
+    2. Using the new Array() Constructor:
+
+        let numbers = new Array(1, 2, 3, 4);
+        console.log(numbers); // Output: [1, 2, 3, 4]
+
+    Note: This method is less common because it can cause confusion when used with a single number 
+    (it creates an empty array of that length).
+
+    Example:
+
+        let emptyArray = new Array(5);
+        console.log(emptyArray); // Output: [ <5 empty items> 
+
+
+     Example of Mixed Data Types in an Array
+
+        let mixed = [1, "hello", true, null];
+        console.log(mixed);  // Output: [1, "hello", true, null]
+
+Summary:
+Feature	            Description:
+Indexing	        Arrays are zero-indexed (first element at index 0).
+Mutable	            You can add/remove elements after creation.
+Flexible	        Can store different data types in one array.
+Length Property	    Use .length to get the number of elements.
+-->

@@ -1,0 +1,47 @@
+
+<!-- Question 2: What is the difference between a while loop and a do-while loop?
+
+ Difference Between while and do-while Loops in JavaScript:
+ Answer: 
+
+Feature	                                  while Loop	                               do-while Loop
+Condition Check	        Checks the condition before running the loop body.  Checks the condition after running the loop body.
+                
+Execution Guarantee	    The loop body may not execute at all if the 	     The loop body executes at least once even if 
+                        condition is false.                                  the condition is false.
+                
+Syntax	                Starts with while (condition)	                    Starts with do { } while (condition)
+
+while Loop Example:
+
+    let i = 0;
+
+    while (i < 3) {
+        console.log("while loop count:", i);
+        i++;
+    }
+
+✅ Condition checked before each iteration.
+
+✅ If i starts at 5, the loop will not run.
+
+do-while Loop Example:
+
+    let j = 0;
+
+    do {
+        console.log("do-while loop count:", j);
+        j++;
+    } while (j < 3);
+    // Output: 0, 1, 2
+
+
+✅ Condition checked after each iteration.
+
+✅ Code always runs at least once, even if condition fails immediately.
+
+Loop Type	        Condition Check	        Runs at least once?	              Use When…
+while	            Before loop	            ❌ No	                        You may skip the loop completely.
+do-while	        After loop	            ✅ Yes	                        You must run the loop once.
+
+-->

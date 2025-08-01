@@ -1,0 +1,71 @@
+
+<!-- 
+Question 3: Discuss the use of <script> tag in HTML. How can you link an external JavaScript
+file to an HTML document?
+
+Answer: 
+
+Use of <script> Tag in HTML:
+
+    The <script> tag in HTML is used to embed JavaScript code within a web page or link to an external JavaScript file. 
+    It allows you to add interactivity, dynamic content, and logic to your website.
+
+Key Points:
+
+    It can be placed in the <head> or <body> section of an HTML document.
+
+    You can write JavaScript code directly inside the <script> tag (internal scripting), or you can link to an external JavaScript file (external scripting).
+
+    By default, scripts are executed immediately as the browser parses the HTML.
+
+Example of Internal JavaScript (Direct Code):
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internal javascript</title>
+    <script> 
+        function internalJavascript(){
+            alert("hello, welcome to javascript")
+        }
+    </script>
+</head>
+<body>
+    <button onclick="internalJavascript()">click hear</button>
+</body>
+</html>
+
+<!-- 
+
+Linking an External JavaScript File:
+    To link an external JavaScript file, 
+    use the src attribute inside the <script> tag and specify the path of the .js file.
+
+    <script src="filename.js"></script>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript File</title>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <button onclick="ExternalJavascript()">click hear</button>
+</body>
+</html>
+
+
+<!-- javascript file name Script.js 
+ 
+    function ExternalJavascript(){
+            alert("hello, welcome to javascript")
+-->
+
+

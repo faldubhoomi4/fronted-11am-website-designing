@@ -1,0 +1,25 @@
+<!-- 
+Task:
+o Create a simple webpage with a button that, when clicked, displays an alert saying
+"Button clicked!" using JavaScript event listeners.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button click example</title>
+</head>
+<body>
+    <h1>Button click Example</h1>
+    <button id="btn" type="button">click me</button>
+    <script>
+        var button = document.getElementById('btn');
+         button.addEventListener("click", function() {
+         alert("Button clicked!");
+    });
+    </script>
+</body>
+</html>

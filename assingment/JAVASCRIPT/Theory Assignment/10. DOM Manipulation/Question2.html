@@ -1,0 +1,83 @@
+
+<!-- Question 2: Explain the methods getElementById(), getElementsByClassName(), and
+querySelector() used to select elements from the DOM.
+
+
+The methods getElementById(), getElementsByClassName(), and querySelector() are used in JavaScript to select elements
+ from the Document Object Model (DOM). getElementById() selects a single element based on its unique ID. 
+ getElementsByClassName() selects all elements with a specified class name, returning an HTMLCollection. 
+ querySelector() selects the first element that matches a given CSS selector,
+ while querySelectorAll() selects all elements that match. 
+ 
+
+1. getElementById():
+    Purpose: Selects a single HTML element based on its unique id attribute.
+    Return Value: Returns the first element that matches the specified ID. If no element with that ID exists, it returns null.
+    Example: 
+    const element = document.getElementById("myElement");
+
+
+    This code selects the element with the id "myElement". 
+2. getElementsByClassName():
+    Purpose: Selects all HTML elements that have a specific class name.
+    Return Value: Returns an HTMLCollection containing all matching elements. An HTMLCollection is a live collection, meaning it updates automatically as the DOM changes.
+    Example: 
+    const elements = document.getElementsByClassName("myClass");
+
+3. querySelector(): 
+    Purpose: Selects the first element that matches a specified CSS selector.
+    Return Value: Returns the first matching element, or null if no match is found.
+    Example: 
+
+    const element = document.querySelector(".myClass"); // Selects the first element with class "myClass"
+    const element2 = document.querySelector("#myElement"); // Selects the element with ID "myElement"
+    const element3 = document.querySelector("div > p"); // Selects the first paragraph inside a div
+
+ querySelector is very flexible, allowing you to use any valid CSS selector. 
+
+4. querySelectorAll():
+    Purpose: Selects all elements that match a specified CSS selector.
+    Return Value: Returns a NodeList containing all matching elements. A NodeList is a static collection, meaning it doesn't update automatically as the DOM changes.
+    Example: 
+    const elements = document.querySelectorAll("p.myClass"); // Selects all paragraphs with class "myClass"
+    querySelectorAll is also very versatile, using CSS selectors to find multiple elements. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

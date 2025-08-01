@@ -1,0 +1,77 @@
+
+<!-- Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays.
+  
+Answer: 
+
+  The methods push(), pop(), shift(), and unshift() are fundamental for manipulating arrays by adding or removing elements at either end. 
+push():
+  Adds one or more elements to the end of an array.
+  Modifies the original array.
+  Returns the new length of the array.
+
+Example: 
+  let fruits = ['apple', 'banana'];
+    fruits.push('orange', 'grape'); // fruits is now ['apple', 'banana', 'orange', 'grape']
+    console.log(fruits.length); // Output: 4
+
+
+pop():
+  Removes the last element from an array.
+  Modifies the original array.
+  Returns the element that was removed. If the array is empty, it returns undefined.
+
+Example: 
+    let fruits = ['apple', 'banana', 'orange'];
+    let removedFruit = fruits.pop(); // removedFruit is 'orange', fruits is now ['apple', 'banana']
+    console.log(removedFruit); // Output: orange.
+
+shift():
+  Removes the first element from an array.
+  Modifies the original array.
+  Returns the element that was removed. If the array is empty, it returns undefined.
+
+Example: 
+    let fruits = ['apple', 'banana', 'orange'];
+    let removedFruit = fruits.shift(); // removedFruit is 'apple', fruits is now ['banana', 'orange']
+    console.log(removedFruit); // Output: apple.
+
+unshift():
+  Adds one or more elements to the beginning of an array. 
+  Modifies the original array.
+  Returns the new length of the array.
+
+Example: 
+
+  let fruits = ['banana', 'orange'];
+  fruits.unshift('apple', 'grape'); // fruits is now ['apple', 'grape', 'banana', 'orange']
+  console.log(fruits.length); // Output: 4
+
+
+Method	   Action	                  Modifies Array?	              Returns
+push()	   Add to end	              ✅ Yes	                       New length of array
+pop()	     Remove from end	        ✅ Yes	                       Removed element
+shift()	   Remove from beginning	  ✅ Yes	                       Removed element
+unshift()	 Add to beginning	        ✅ Yes	                       New length of array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

@@ -1,0 +1,62 @@
+
+<!-- Question 2: Explain how to access and update object properties using dot notation and
+bracket notation.
+
+Answer: 
+  Accessing and Updating Object Properties in JavaScript
+  In JavaScript, you can access and update properties of an object using two main methods:
+
+  Dot Notation (.)
+
+  Bracket Notation ([])
+
+1. Dot Notation
+  Syntax: object.property
+
+  Use When: The property name is a valid identifier (no spaces, special characters, or starts with numbers).
+
+  Example:
+
+    let car = { brand: "Toyota", model: "Corolla" };
+
+    // Accessing
+    console.log(car.brand);  // Output: Toyota
+
+    // Updating
+    car.model = "Camry";
+    console.log(car.model);  // Output: Camry
+
+
+ 2. Bracket Notation
+    Syntax: object["property"]
+
+    Use When:
+
+    The property name has spaces or special characters.
+
+    The property name is stored in a variable.
+
+    The property name is dynamically generated.
+
+Example 1 – Accessing using brackets:
+
+    let person = { "first name": "Alice", age: 25 };
+
+    // Accessing
+    console.log(person["first name"]);  // Output: Alice
+
+    // Updating
+    person["age"] = 26;
+    console.log(person["age"]);  // Output: 26
+
+Example 2 – Using variable as key:
+
+
+    let key = "city";
+    let address = { city: "New York", zip: 10001 };
+
+    console.log(address[key]);  // Output: New York
+
+    address[key] = "Los Angeles";
+    console.log(address.city);  // Output: Los Angeles
+  -->

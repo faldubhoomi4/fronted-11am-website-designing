@@ -1,0 +1,81 @@
+
+<!-- Question 2: How does the addEventListener() method work in JavaScript? Provide
+an example.
+
+Answer: 
+
+The addEventListener() method in JavaScript is used to attach an event handler to a specified element in the Document Object Model (DOM).
+It allows you to execute a function when a particular event, such as a click, keypress, or mouseover, occurs on that element. 
+
+ How it works:
+    The addEventListener() method takes at least two arguments:
+    event (string): The type of event to listen for (e.g., "click", "keydown", "submit"). 
+    function (function): The function to be executed when the specified event occurs. This can be a named function or an anonymous function. 
+    useCapture (boolean, optional): A boolean value that determines whether the event should be handled during the capturing phase (true) or the bubbling phase (false). The default value is false (bubbling). 
+    When the specified event happens on the target element, the provided function (the event handler) is automatically called.
+
+
+
+ Example:
+    This example demonstrates how to use addEventListener() to display an alert when a button is clicked.
+    Code
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>addEventListener Example</title>
+    </head>
+    <body>
+        <button id="myButton">Click Me</button>
+
+        <script>
+            // Get a reference to the button element
+            const myButton = document.getElementById('myButton');
+
+            // Add a click event listener to the button
+            myButton.addEventListener('click', function() {
+                alert('Button was clicked!');
+            });
+        </script>
+    </body>
+    </html>
+
+
+
+ In this example:
+    document.getElementById('myButton') selects the HTML button with the ID "myButton".
+    myButton.addEventListener('click', function() { ... }); attaches a "click" event listener to the myButton element.
+    The anonymous function function() { alert('Button was clicked!'); } is the event handler. When the button is clicked, 
+    this function is executed, and an alert box appears with the message "Button was clicked!".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
