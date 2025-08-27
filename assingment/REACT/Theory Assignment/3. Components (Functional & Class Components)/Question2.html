@@ -1,0 +1,68 @@
+<!-- 
+ Question 3: What is the role of render() in class components?
+ 
+ What is the role of render() in class components?
+🔹 Definition:
+
+In React class components, the render() method is a mandatory method.
+
+It is responsible for describing what should be displayed on the UI.
+
+The render() method must return JSX (or null).
+
+
+Key Roles of render()
+
+Defines the UI:
+
+Determines what HTML/JSX will be shown when the component is rendered.
+
+Uses props and state:
+
+It can access this.props and this.state to dynamically render data.
+
+Pure Function Concept:
+
+render() should be a pure function, meaning:
+
+It should only depend on props and state.
+
+It should not modify state or interact with the DOM directly.
+
+import React, { Component } from "react";
+
+class Greeting extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { message: "Welcome to React!" };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.message}</h1>
+        <p>Hello, {this.props.name}!</p>
+      </div>
+    );
+  }
+}
+
+export default Greeting;
+
+If name="Bhoomi" is passed from parent:
+
+Welcome to React!
+Hello, Bhoomi!
+
+Important Points
+
+Every class component must have a render() method.
+
+render() is called whenever:
+
+The component first mounts (initial render).
+
+The state or props change (re-render).
+
+It should not contain side effects (like API calls, timers, or setState) → those go inside lifecycle methods like componentDidMount.
+-->

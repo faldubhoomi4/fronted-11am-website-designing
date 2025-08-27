@@ -1,0 +1,69 @@
+<!-- 
+Question 3: Why is this.setState() used in class components, and how does it work?
+ Answer:
+
+ Why is this.setState() used in class components?
+
+        In React class components, state is stored in the special object this.state.
+
+        But we cannot update state directly (e.g., this.state.count = 5 ❌).
+
+        Instead, we must use this.setState(), which:
+
+        Updates the state object.
+
+        Triggers a re-render of the component so the UI reflects the new state.
+
+        Ensures React handles updates efficiently (batching updates, avoiding unnecessary re-renders).
+
+ How does this.setState() work?
+
+    this.setState() merges the new state with the existing state.
+
+    It is asynchronous: React may delay updates for performance reasons.
+
+ Example:
+
+
+
+    import React, { Component } from "react";
+
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    // Initial state
+    this.state = { count: 0 };
+  }
+
+  increment = () => {
+    // Correct way to update state
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>Count: {this.state.count}</h2>
+        <button onClick={this.increment}>Increase</button>
+      </div>
+    );
+  }
+}
+
+export default Counter;
+
+    Key Points about this.setState()
+
+    Merges state – unlike replacing the whole state object, it merges only the changed fields.
+
+    this.setState({ name: "Alice" }); // keeps other state keys intact
+
+
+Asynchronous – state updates may be batched.
+    If you rely on the previous state, use the function form:
+
+    this.setState((prevState) => ({ count: prevState.count + 1 }));
+
+
+    Triggers re-render – after updating, React re-renders the component so the UI always matches the latest state.
+ -->

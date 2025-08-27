@@ -1,0 +1,36 @@
+<!-- 
+  Question 1: What are props in React.js? How are props different from state?
+ 
+ Answer:
+    Props (short for properties) are read-only inputs passed from a parent component to a child component.
+
+    They allow data to flow one way (parent → child), making components reusable and dynamic.
+
+    Example:
+    function Greeting(props) {
+    return <h1>Hello, {props.name}!</h1>;
+    }
+
+    function App() {
+    return <Greeting name="Bhoomi" />;
+}
+   Here, name="Bhoomi" is a prop passed to the Greeting component. 
+
+
+How are props different from state?
+| Feature          | **Props**                                                    | **State**                                                                 |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| **Definition**   | Data passed from parent to child component                   | Data that a component manages internally                                  |
+| **Mutability**   | **Immutable** (cannot be changed inside child component)     | **Mutable** (can be updated with `setState` or `useState`)                |
+| **Who sets it?** | Parent component sets props                                  | Component itself manages its own state                                    |
+| **Usage**        | Used to pass data into a component (like function arguments) | Used for data that changes over time (like user input, counters, toggles) |
+| **Direction**    | Unidirectional (parent → child)                              | Fully contained within the component                                      |
+| **Example**      | `<Greeting name="Alice" />`                                  | `const [count, setCount] = useState(0);`                                  |
+
+
+In short:
+
+Props = external, read-only data (like arguments).
+
+State = internal, changeable data (like variables inside a function).
+ -->

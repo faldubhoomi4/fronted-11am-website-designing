@@ -1,0 +1,48 @@
+<!-- 
+Question 3: Discuss the importance of using curly braces {} in JSX expressions.
+
+In React JSX (JavaScript XML), curly braces {} are used to embed JavaScript expressions inside the markup. 
+This is one of the most powerful features of JSX because it allows us to mix dynamic content with HTML-like structure.
+
+Importance of Curly Braces in JSX
+
+1. Embedding Variables
+
+Curly braces let us insert variable values directly into JSX.
+
+
+const name = "Bhoomi";
+const element = <h1>Hello, {name}!</h1>;
+
+
+2. Using JavaScript Expressions
+
+We can perform calculations or call functions inside {}.
+
+const age = 21;
+const element = <p>Next year: {age + 1}</p>;
+
+
+3.Conditional Rendering
+
+{} allows conditions using ternary operators or logical operators.
+
+const isLoggedIn = true;
+const element = <p>{isLoggedIn ? "Welcome Back!" : "Please Log In"}</p>;
+
+
+4.Rendering Lists
+
+Curly braces are used with .map() to render arrays dynamically.
+
+const fruits = ["Apple", "Banana", "Cherry"];
+const list = <ul>{fruits.map(fruit => <li key={fruit}>{fruit}</li>)}</ul>;
+
+
+5. Dynamic UI Updates
+
+Without {}, JSX would only show static text.
+
+With {}, React components can update automatically when state or props change.
+
+-->

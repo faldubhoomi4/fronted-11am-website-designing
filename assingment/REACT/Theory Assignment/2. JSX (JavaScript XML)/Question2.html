@@ -1,0 +1,55 @@
+<!-- 
+ 
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript inside
+JSX?
+
+
+1. How is JSX different from regular JavaScript?
+
+JSX looks like HTML, but it’s not HTML. It’s just syntactic sugar for JavaScript’s React.createElement() calls.
+
+Browsers cannot understand JSX directly → it must be transpiled (by Babel) into plain JavaScript.
+
+JSX allows you to combine UI structure (like HTML) and logic (JavaScript) in one file.
+
+Example:
+JSX:
+const element = <h1>Hello, React!</h1>;
+Regular JavaScript equivalent:
+const element = React.createElement("h1", null, "Hello, React!");
+
+
+2. Can you write JavaScript inside JSX?
+
+const name = "Bhoomi";
+const age = 21;
+
+const element = (
+  <div>
+    <h1>Hello, {name}!</h1>
+    <p>You are {age} years old.</p>
+    <p>Next year: {age + 1}</p> {/* JS expression */}
+  </div>
+);
+
+Rules:
+
+You can use expressions (like variables, function calls, arithmetic, ternary operators).
+
+You cannot write full statements (like if, for, while) directly inside JSX.
+
+Instead, use ternary (condition ? true : false) or map functions.
+
+
+Example with ternary:
+
+
+const isLoggedIn = true;
+
+const element = (
+  <h1>{isLoggedIn ? "Welcome back!" : "Please log in."}</h1>
+);
+
+
+
+-->

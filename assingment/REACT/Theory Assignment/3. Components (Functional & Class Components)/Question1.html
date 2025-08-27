@@ -1,0 +1,68 @@
+<!-- 
+ Question 1: What are components in React? Explain the difference between functional
+components and class components
+
+Q1: What are Components in React?
+
+In React, a component is a reusable, independent piece of UI that can be rendered on the screen.
+
+Think of components like building blocks of a React application.
+
+Each component can have:
+
+UI (View) → What is displayed (HTML/JSX)
+
+Logic → How it behaves (state, props, event handling)
+
+
+For example, a Button, Navbar, or UserCard can each be separate components.
+
+
+React mainly has two types of components:
+
+1. Functional Components
+
+Written as JavaScript functions.
+
+Receive props as arguments and return JSX.
+
+Can use React Hooks (useState, useEffect, etc.) for managing state and lifecycle.
+
+Simpler, cleaner, and more commonly used in modern React.
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+2. Class Components
+
+Written as ES6 classes.
+
+Extend from React.Component.
+
+Must use render() method to return JSX.
+
+Can manage state and lifecycle using class methods (this.state, componentDidMount, etc.).
+
+More verbose, less commonly used in modern React (replaced by hooks).
+
+Example: 
+import React, { Component } from "react";
+
+class Greeting extends Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+
+
+Key Differences:        Functional vs Class Components
+Feature   	                Functional Components	                     Class Components
+Syntax	                    JavaScript function	                       ES6 class extends React.Component
+State	                Managed using Hooks (useState)	               Managed using this.state
+Lifecycle Methods	Achieved with Hooks (useEffect)	                   Use methods like componentDidMount, componentDidUpdate
+Code Simplicity     	Concise & easier to read	                   Verbose, requires this keyword
+Performance  	   Slightly better (before Hooks, they were stateless) 	Heavier due to class overhead
+Modern Usage	Preferred in new projects	                            Legacy, still seen in old projects
+
+-->

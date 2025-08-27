@@ -1,0 +1,86 @@
+<!-- 
+ 
+Q2: How do you pass data to a component using props?
+🔹 What are Props?
+
+    Props (short for properties) are used to pass data from a parent component → child component.
+
+    Props are read-only → a child cannot modify the props it receives.
+
+    They make components reusable by allowing you to pass different data each time.
+    
+    
+Steps to Pass Data with Props
+
+    Define a child component that accepts props.
+
+    Pass data from the parent component when using the child.
+
+    Access props inside the child component.    
+    
+Example 1: Functional Component with Props:
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+
+function App() {
+  return (
+    <div>
+      <Greeting name="Bhoomi" />
+      <Greeting name="Alex" />
+    </div>
+  );
+}
+ 
+
+Example 2: Using Destructuring for Cleaner Code:
+
+function UserCard({ name, age }) {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <p>Age: {age}</p>
+    </div>
+  );
+}
+
+function App() {
+  return <UserCard name="Bhoomi" age={22} />;
+}
+
+
+Example 3: Passing Different Types of Data:
+
+function Profile({ username, isOnline, hobbies }) {
+  return (
+    <div>
+      <h2>{username}</h2>
+      <p>Status: {isOnline ? "Online" : "Offline"}</p>
+      <ul>
+        {hobbies.map((hobby, index) => (
+          <li key={index}>{hobby}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Profile
+      username="Bhoomi"
+      isOnline={true}
+      hobbies={["Reading", "Coding", "Traveling"]}
+    />
+  );
+}
+
+Key Points about Props
+
+Props flow one-way (parent → child).
+
+They are immutable inside the child.
+
+Used to make components dynamic and reusable.
+-->
+
